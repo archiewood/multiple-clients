@@ -20,5 +20,19 @@ order by 1
   title="Orders by week"
 />
 
+```sql total_sales
+select sum(sales) as total_sales from needful_things.orders
+```
+
+<BigValue
+  data={total_sales}
+  value=total_sales
+  fmt=usd
+/>
+
+
+
+
+
 
 
